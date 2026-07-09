@@ -1,0 +1,123 @@
+.container-titulo-secundario {
+  padding: 7rem 0 0;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--cor-fundo-3) 70%,
+    var(--cor-fundo-2)
+  );
+}
+.container-titulo-secundario li {
+  list-style: none;
+}
+.lista-bicicletas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.bicicleta-cinza,
+.bicicleta-preta,
+.bicicleta-branca {
+  max-width: 90%;
+  flex-shrink: 0;
+  border-radius: var(--radius-img);
+  display: block;
+  margin: 0 auto;
+}
+.bicicleta-cinza:hover,
+.bicicleta-preta:hover,
+.bicicleta-branca:hover {
+  box-shadow: 0.1px 0.1px 12px var(--shadow-bord);
+}
+.container-preco-nome {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto 1rem;
+  max-width: 70%;
+  gap: 3rem;
+}
+.preco-bicicleta,
+.nome-bicicleta {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  color: var(--cor-1);
+  border: var(--shadow-bord);
+  background-color: var(--cor-fundo-1);
+  border-radius: var(--radius-botao);
+  box-shadow: 0.1px 0.1px 2px var(--shadow-bord);
+}
+.container-titulo-secundario span {
+  margin-left: 0.5rem;
+}
+.container-titulo-secundario .preco-bicicleta:hover span {
+  box-shadow: 0.1px 0.1px 12px var(--cor-1);
+  background-color: var(--shadow-bord-2);
+}
+
+.container-lista-bicicletas a {
+  font-size: 1rem;
+  width: fit-content;
+  background-color: var(--cor-bg-botao-3);
+  text-decoration: none;
+  padding: var(--padding-botao);
+  justify-content: center;
+  display: flex;
+  margin: 1rem auto;
+}
+@media (max-width: 1100px) {
+  .lista-bicicletas {
+    display: flex;
+    max-width: 100%;
+    gap: 0.5rem;
+  }
+  .container-titulo-secundario {
+    padding: 1.3rem;
+    height: 100vh;
+  }
+  .titulo-secundario {
+    display: none;
+  }
+  .container-preco-nome {
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .bicicleta-cinza,
+  .bicicleta-preta,
+  .bicicleta-branca {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: var(--radius-img);
+    display: block;
+    margin-right: 20px;
+  }
+  .lista-bicicletas {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding-bottom: 5rem;
+  }
+  .lista-bicicletas img {
+    min-width: 280px;
+  }
+  .preco-bicicleta {
+    display: none;
+  }
+  .nome-bicicleta {
+    color: white;
+    font-size: 1rem;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .container-lista-bicicletas a {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --shadow-bord: rgba(0, 225, 255, 0.4);
+  --shadow-bord-2: rgb(255, 251, 2);
+  --cor-fundo-2: #ffffff;
+  --cor-fundo-1: #111111;
+  --cor-fundo-3: #222222;
+  --largura-maxima: 70%;
+  --cor-texto-1: #ffffff;
+  --cor-texto-2: #000000;
+  --borda-botao: 1px;
+  --cor-borda-botao: #eeff00;
+  --cor-botao: #ffffff;
+  --cor-bg-botao-3: #000000;
+  --cor-botao-2: #eeff00;
+  --cor-bg-botao: #ffffff;
+  --cor-botao-hover: rgb(255, 251, 2);
+  --cor-borda-hover: rgb(255, 251, 2);
+  --fundo-botao: #f7f7f7;
+  --radius-botao: 0.2rem;
+  --radius-img: 0.5rem;
+  /* cores gradiente */
+  --cor-gradiente-1: #ffffff;
+  --cor-gradiente-2: #0c0c0c;
+  --cor-gradiente-3: #645c5c;
+  --cor-gradiente-4: #c9c3c3;
+  --cor-gradiente-5: #000000;
+  /* cores gradiente */
+  --padding-botao: 0.3rem 2rem;
+  --padding-botao-2: 1rem 1.5rem;
+  --padding-botao-3: 0.5rem 1rem;
+  /* cores efeitos de botão */
+  --cor-1: #ffffff;
+  --cor-2: #009dff;
+  --cor-3: #270730;
+  --cor-4: #0059ff;
+  --cor-5: #000000;
+
+  --titulo-secundario: 2rem;
+}
