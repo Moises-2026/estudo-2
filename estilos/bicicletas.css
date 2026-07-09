@@ -70,14 +70,18 @@
   .lista-bicicletas {
     display: flex;
     max-width: 100%;
-    gap: 0.5rem;
+    gap: 0.5rem 1rem;
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    justify-content: flex-start;
-    margin: 1rem auto;
-    padding: 0 1rem 5rem;
+    justify-content: start;
+    margin: 1rem auto 0;
+    scroll-padding-inline: 1rem;
+  }
+  .lista-bicicletas li {
+    scroll-snap-align: start;
+    flex: 0 0 17rem;
   }
   .container-titulo-secundario {
     padding: 1.3rem;
@@ -98,9 +102,6 @@
     flex-shrink: 0;
     border-radius: var(--radius-img);
     display: block;
-  }
-  .lista-bicicletas img {
-    min-width: 270px;
   }
   .preco-bicicleta {
     display: none;
