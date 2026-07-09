@@ -71,10 +71,17 @@
     display: flex;
     max-width: 100%;
     gap: 0.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    margin: 1rem auto;
+    padding: 0 1rem 5rem;
   }
   .container-titulo-secundario {
     padding: 1.3rem;
-    height: 100vh;
+    height: auto;
   }
   .titulo-secundario {
     display: none;
@@ -91,21 +98,9 @@
     flex-shrink: 0;
     border-radius: var(--radius-img);
     display: block;
-    margin-right: 20px;
-  }
-  .lista-bicicletas {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    justify-content: flex-start;
-    max-width: 100%;
-    margin: 1rem auto;
-    padding-bottom: 5rem;
   }
   .lista-bicicletas img {
-    min-width: 280px;
+    min-width: 270px;
   }
   .preco-bicicleta {
     display: none;

@@ -73,8 +73,9 @@
   }
   .logo {
     justify-self: center;
+    padding: 2rem;
   }
- .container-botao {
+  .container-botao {
     margin-top: 1rem;
     flex-wrap: wrap;
     justify-content: center;
