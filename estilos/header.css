@@ -1,4 +1,5 @@
 .container-header {
+  padding: 3rem;
   background: linear-gradient(
     to bottom,
     var(--cor-fundo-3) 10%,
@@ -7,8 +8,22 @@
   width: 100%;
   top: 0;
   left: 0;
-  position: fixed;
 }
+.voltar {
+  color: var(--shadow-bord);
+  border: 1px solid var(--shadow-bord);
+  position: fixed;
+  background-color: black;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.voltar:hover {
+  color: var(--shadow-bord-2);
+  border: 1px solid var(--shadow-bord-2);
+}
+
 .itens-header {
   margin: 0 auto;
   display: flex;
@@ -22,7 +37,7 @@
 }
 .itens-header li {
   color: var(--cor-texto-1);
-  padding: 1rem;
+  padding: 0.5rem;
   list-style: none;
   font-size: 1.3rem;
 }
@@ -80,11 +95,17 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .voltar {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
+  .container-header{
+    padding: 1rem 0;
+  }
   .container-botao {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .botao {

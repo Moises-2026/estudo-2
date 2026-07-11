@@ -1,16 +1,41 @@
 .container-titulo-secundario {
-  padding: 7rem 0 0;
-  height: 100vh;
+  padding: 1rem 0 0;
   background: linear-gradient(
     to bottom,
-    var(--cor-fundo-3) 70%,
-    var(--cor-fundo-2)
+    var(--cor-fundo-3) 50%,
+    var(--cor-fundo-2) 100%
   );
 }
 .container-titulo-secundario li {
   list-style: none;
 }
+.texto-generico {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-5);
+  justify-self: center;
+  margin-top: 0;
+  padding: 4rem 0 1rem;
+  text-shadow: 0.1px 0.1px 12px var(--shadow-bord);
+}
+.texto-generico:target {
+  animation: aparecerTexto 3s forwards;
+}
+@keyframes aparecerTexto {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .lista-bicicletas {
+  padding: 2rem 2rem 1rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -43,7 +68,6 @@
   display: flex;
   align-items: center;
   color: var(--cor-1);
-  border: var(--shadow-bord);
   background-color: var(--cor-fundo-1);
   border-radius: var(--radius-botao);
   box-shadow: 0.1px 0.1px 2px var(--shadow-bord);
@@ -77,7 +101,12 @@
     scroll-behavior: smooth;
     justify-content: start;
     margin: 1rem auto 0;
-    scroll-padding-inline: 1rem;
+  }
+  .texto-generico {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0 1rem;
   }
   .lista-bicicletas li {
     scroll-snap-align: start;
@@ -112,8 +141,16 @@
     flex-wrap: nowrap;
     text-align: center;
   }
+  .container-lista-bicicletas {
+    padding: 5rem 0 0;
+  }
   .container-lista-bicicletas a {
     padding: 0;
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-lista-bicicletas {
+    padding: 0.5rem 0 0;
   }
 }

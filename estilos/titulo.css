@@ -1,5 +1,5 @@
 .container-titulo {
-  padding: 4rem 0;
+  padding: 3rem 0 2rem;
   margin: 0 auto;
   background: linear-gradient(
     to bottom,
@@ -14,7 +14,7 @@
   grid-template-columns: 1fr 1fr;
   color: var(--cor-1);
   max-width: var(--largura-maxima);
-  padding: 15rem 0 0;
+  padding: 2rem 0 0;
   text-align: left;
   align-items: center;
 }
@@ -36,12 +36,12 @@
 .informacao {
   font-size: 1.4rem;
   width: 40ch;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
 .titulo a {
   display: inline-block;
   text-transform: uppercase;
-  margin: 5rem 0;
+  margin: 5rem 0 0;
   padding: var(--padding-botao-2);
 }
 .container-bicicleta-1 {
@@ -54,7 +54,7 @@
 }
 @media (max-width: 1100px) {
   .container-titulo {
-    padding: 1rem 0;
+    padding: 1rem 0 0;
   }
   .titulo {
     max-width: 100%;

@@ -9,13 +9,15 @@
 </head>
 
 <body>
-  <!--logo e liks-->
-  <header class="container-header">
+  <!--logo e links-->
+  <header id="topo" class="container-header">
+    <a href="#topo" class="voltar">Inicio</a>
     <div class="itens-header">
       <img class="logo" src="img/bikcraft.svg" alt="">
       <nav>
         <ul class="container-botao">
-          <li><a class="botao" href="">Bicicletas</a></li>
+          <li><a class="botao" href="#escolher">Bicicletas</a></li>
+          <li><a class="botao" href="#tecnologia">Tecnologia</a></li>
           <li><a class="botao" href="">Seguros</a></li>
           <li><a class="botao" href="">Contato</a></li>
         </ul>
@@ -30,7 +32,7 @@
         <div class="texto-titulo">
           <h1 class="titulo-principal">Bicicletas feitas <br>sob medida <span class="bolinha"></span></h1>
           <p class="informacao">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-          <a class="botao" href="">Escolha sa sua</a>
+          <a class="botao" href="#melhores">Escolha a sua</a>
         </div>
         <div class="container-bicicleta-1"><img class="bicicleta-titulo" src="img/bicicleta/nimbus1.jpg" alt=""></div>
       </article>
@@ -38,7 +40,8 @@
     <!--começo da 2 section-->
     <section class="container-titulo-secundario">
       <article class="container-lista-bicicletas">
-        <ul class="lista-bicicletas">
+        <h2 class="texto-generico" id="melhores">"As melhores do país"</h2>
+        <ul class="lista-bicicletas" id="escolher">
           <li>
             <div class="container-preco-nome">
               <h4 class="nome-bicicleta">Magic Might</h4>
@@ -65,6 +68,31 @@
           </li>
         </ul>
       </article>
+    </section>
+    <!--final da 2 section-->
+    <!--começo da 3 section-->
+    <section id="tecnologia" class="container-tecnologia-geral">
+      <div class="container-tecnologia">
+        <div class="container-itens-tecnologia">
+          <p class="detalhe-tecnologia">Tecnologia Avançada</p>
+          <h2 class="titulo-tecnologia">você escolhe as suas cores ecomponentes <span class="bolinha"></span></h2>
+          <p class="texto-tecnologia">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+          <a href="" class="btn-escolha">Escolha um modelo</a>
+          <div class="grid-itens">
+            <div class="descricao-itens">
+              <img class="icone-tecnologia" src="/img/icones/eletrica.svg" alt="">
+              <p class="item-tecnologia">Motor Elétrico</p>
+              <p class="descricao-tecnologia">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+            </div>
+            <div class="descricao-itens">
+              <img class="icone-tecnologia" src="/img/icones/rastreador.svg" alt="">
+              <p class="item-tecnologia">Rastreador</p>
+              <p class="descricao-tecnologia">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+            </div>
+          </div>
+        </div>
+        <div><img class="imagem-tecnologia" src="/img/fotos/tecnologia.jpg" alt=""></div>
+      </div>
     </section>
   </main>
 </body>

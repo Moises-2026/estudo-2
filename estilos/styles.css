@@ -33,7 +33,7 @@ body {
   --cor-gradiente-4: #c9c3c3;
   --cor-gradiente-5: #000000;
   /* cores gradiente */
-  --padding-botao: 0.3rem 2rem;
+  --padding-botao: 0.2rem 0.5rem;
   --padding-botao-2: 1rem 1.5rem;
   --padding-botao-3: 0.5rem 1rem;
   /* cores efeitos de botão */
@@ -42,6 +42,7 @@ body {
   --cor-3: #270730;
   --cor-4: #0059ff;
   --cor-5: #000000;
+  --cor-6: #d6d2d2;
 
   --titulo-secundario: 2rem;
 }
